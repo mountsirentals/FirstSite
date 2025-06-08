@@ -1,0 +1,21 @@
+<svg width="100" height="140" viewBox="200 130 112 220" xmlns="http://www.w3.org/2000/svg">
+  <!-- Location pin shape (Google Green) -->
+  <path d="M256,130
+           C220,130 190,160 190,200
+           C190,245 256,330 256,330
+           C256,330 322,245 322,200
+           C322,160 292,130 256,130 Z"
+        fill="#34A853"/>
+
+  <!-- Inner white circle -->
+  <circle cx="256" cy="200" r="40" fill="white"/>
+
+  <!-- Green moon/sun -->
+  <circle cx="256" cy="185" r="6" fill="#34A853"/>
+
+  <!-- Flipped green mountain shape -->
+  <path d="M280 215 L270 195 L260 208 L250 200 L236 215 Z" fill="#34A853"/>
+
+  <!-- Bottom ellipse (green ring, thicker) -->
+  <ellipse cx="256" cy="328" rx="44" ry="8" fill="none" stroke="#34A853" stroke-width="3"/>
+</svg>
