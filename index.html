@@ -102,7 +102,7 @@
 								<h1><strong> Mount Si Rentals</strong></h1>
 							</header>
 							<p>Discover the freedom of the open road with Mount Si Rentals — your trusted local car rental service in North Bend, Washington. Whether you're exploring Snoqualmie Falls, heading out on a family adventure, or visiting the Cascades, our clean, comfortable, and fuel-efficient vehicles are ready to get you there. We're a small business with a big commitment to reliability, convenience, and community.</p>
-							<a href="https://turo.com/us/en/minivan-rental/united-states/north-bend-wa/toyota/sienna/3204026" class="button large scrolly">Book Your Rental</a>
+							<a href="https://turo.com/us/en/minivan-rental/united-states/north-bend-wa/toyota/sienna/3204026" target="_blank" onclick="gtag('event', 'click', { 'event_category': 'CTA', 'event_label': 'Turo Book Your Rental Button' });" class="button large scrolly">Book Your Rental</a>
 						</div>
 					</div>
 				</div>
@@ -155,7 +155,10 @@
 						<div class="col-4 col-6-medium col-12-small">
 							<article class="box style2">
 								<a href="#" class="image featured">
-									<div class="carousel-container" onclick="window.open('https://turo.com/us/en/minivan-rental/united-states/north-bend-wa/toyota/sienna/3204026', '_blank')">
+									<div class="carousel-container" onclick="window.open('https://turo.com/us/en/minivan-rental/united-states/north-bend-wa/toyota/sienna/3204026', '_blank'); gtag('event', 'carousel_interaction', {
+										'event_category': 'Engagement',
+										'event_label': 'Homepage Carousel'
+										});"">
 										<div class="carousel-track" id="carouselTrack">
 										  <div class="carousel-slide"><img src="images/Left-side.png" alt="Image 1"></div>
 										  <div class="carousel-slide"><img src="images/Front.png" alt="Image 2"></div>
@@ -183,7 +186,7 @@
 					</div>
 					<footer>
 						<p>More to come!</p>
-						<a href="https://turo.com/us/en/minivan-rental/united-states/north-bend-wa/toyota/sienna/3204026" class="button large scrolly">Book Now</a>
+						<a href="https://turo.com/us/en/minivan-rental/united-states/north-bend-wa/toyota/sienna/3204026" target="_blank" onclick="gtag('event', 'click', { 'event_category': 'CTA', 'event_label': 'Turo Book Now Button' });" class="button large scrolly">Book Now</a>
 					</footer>
 				</div>
 			</article>
@@ -197,16 +200,35 @@
 					</header>
 					<div class="row">
 						<div class="col-12" style="text-align: center;">
-							<a href="mailto:support@mountsirentals.com?subject=Rental Inquiry&body=Hello Mount Si Rentals,%0A%0AI'm interested in learning more about your rental vehicles. Please contact me with more information.%0A%0AThank you!" class="button large">Email Support</a>
+							<a href="mailto:support@mountsirentals.com?subject=Rental Inquiry&body=Hello Mount Si Rentals,%0A%0AI'm interested in learning more about your rental vehicles. Please contact me with more information.%0A%0AThank you!" class="button large" onclick="gtag('event', 'click', {
+								'event_category': 'Contact',
+								'event_label': 'Email Click',
+								'value': 1
+							});">Email Support</a>
 						</div>
 						<div class="col-12">
 							<hr />
 							<h3>Reach us on...</h3>
 							<ul class="social">
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f" href="https://facebook.com/mountsirentals" target="_blank"
+									onclick="gtag('event', 'click', {
+										'event_category': 'Contact',
+										'event_label': 'Facebook Profile Click',
+										'value': 1
+									});"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram" href="https://instagram.com/mountsirentals" target="_blank"
+									onclick="gtag('event', 'click', {
+										'event_category': 'Contact',
+										'event_label': 'Instagram Profile Click',
+										'value': 1
+									});"><span class="label">Instagram</span></a></li>
+								<!-- <li><a href="#" class="icon brands fa-twitter" ><span class="label">Twitter</span></a></li> -->
+								<li><a href="#" class="icon brands fa-whatsapp" href="https://wa.me/14255551234" target="_blank"
+									onclick="gtag('event', 'click', {
+										'event_category': 'Contact',
+										'event_label': 'WhatsApp Click',
+										'value': 1
+									});"><span class="label">WhatsApp</span></a></li>
 							</ul>
 							<hr />
 						</div>
