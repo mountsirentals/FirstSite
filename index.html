@@ -204,14 +204,18 @@
 										'event_category': 'Engagement',
 										'event_label': 'Homepage Carousel'
 										});"">
-										<div class="carousel-track" id="carouselTrack">
-										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-24.png" alt="Image 1"></div>
-										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-25.png" alt="Image 2"></div>
-										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-26.png" alt="Image 3"></div>
-										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-27.png" alt="Image 4"></div>
-										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-28.png" alt="Image 5"></div>
-										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-29.png" alt="Image 6"></div>
-										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-30.png" alt="Image 7"></div>
+										<div class="carousel-track" id="carouselTrack1">
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-24.png" alt="Image 10"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-25.png" alt="Image 20"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-26.png" alt="Image 30"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-27.png" alt="Image 40"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-28.png" alt="Image 50"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-29.png" alt="Image 60"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-30.png" alt="Image 70"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-31.png" alt="Image 80"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-32.png" alt="Image 90"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-33.png" alt="Image 100"></div>
+										  <div class="carousel-slide"><img src="images/crosstreck/Untitled-34.png" alt="Image 110"></div>
 										</div>
 										<div class="dots-container" id="dotsContainer">
 										  <div class="dot active"></div>
@@ -221,11 +225,16 @@
 										  <div class="dot"></div>
 										  <div class="dot"></div>
 										  <div class="dot"></div>
+										  <div class="dot"></div>
+										  <div class="dot"></div>
+										  <div class="dot"></div>
+										  <div class="dot"></div>
+										  <div class="dot"></div>
 										</div>
 									  </div>
 								</a>
-								<h3><a href="#">Tayota Sienna</a></h3>
-								<p>8 Seater, 2024, Hybrid, 550+ Miles for full tank of gas</p>
+								<h3><a href="#">Subaru Crosstrek</a></h3>
+								<p>5 Seater, AWD, wilderness model for your next Adventure</p>
 							</article>
 						</div>
 					</div>
@@ -312,5 +321,23 @@
 		  index = (index + 1) % totalSlides;
 		  updateCarousel();
 		}, 2000);
-	  </script>
+	</script>
+	<script>
+		const track1 = document.getElementById('carouselTrack1');
+		const dots1 = document.querySelectorAll('.dot');
+		const totalSlides1 = dots.length;
+		let index1 = 0;
+	  
+		function updateCarousel1() {
+		  track1.style.transform = `translateX(-${index1 * 100}%)`;
+		  dots1.forEach((dot, i) => {
+			dot.classList.toggle('active', i === index);
+		  });
+		}
+	  
+		setInterval(() => {
+		  index1 = (index1 + 1) % totalSlides1;
+		  updateCarousel1();
+		}, 2000);
+	</script>
 </html>
